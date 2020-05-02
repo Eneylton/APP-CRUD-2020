@@ -1,9 +1,7 @@
-<ion-header >
+
+<ion-header>
   <ion-navbar color="secondary">
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Home</ion-title>
+    <ion-title>Detalhes</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -26,17 +24,13 @@
     <ion-item>
       <ion-input type="text" placeholder="Email" [(ngModel)]="email"></ion-input>
     </ion-item>
-    
-    <ion-item>
-      <ion-input type="text" [(ngModel)]="money" nome="money" placeholder="R$" [brmasker]="{money: true, thousand: '.',  decimalCaracter: ',', decimal: '2'}"></ion-input> 
-  </ion-item>
 
     <ion-list style="margin-left: 7px;">
       <ion-item>
         <ion-label>Categoria</ion-label>
         <ion-select [(ngModel)]="categoria">
-          <ion-option value="Nes">NES</ion-option>
-          <ion-option value="Nintendo64">Nintendo64</ion-option>
+          <ion-option value="nes">NES</ion-option>
+          <ion-option value="n64">Nintendo64</ion-option>
           
         </ion-select>
       </ion-item>
@@ -44,7 +38,7 @@
 
 
     <ion-item>
-      <button ion-button block (click)="add()">Cadastrar</button>
+      <button ion-button block (click)="add()">Editar</button>
     </ion-item>
 
   </ion-list>
